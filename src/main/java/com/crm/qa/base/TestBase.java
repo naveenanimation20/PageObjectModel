@@ -50,8 +50,6 @@ public class TestBase {
 		
 		driver.get(prop.getProperty("url"));
 		
-		
-		
 	}
 	
 	
