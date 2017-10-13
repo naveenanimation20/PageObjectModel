@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="12" failures="2" name="TestSuite" time="62.339" errors="0" skipped="0">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="JOB_NAME" value="TestMavenTrial"/>
+    <property name="PWD" value="/Users/naveenkhunteta/Documents/Jenkins"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="mysqladmin" value="/usr/local/mysql/bin/mysqladmin"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="JENKINS_HOME" value="/Users/naveenkhunteta/.jenkins"/>
+    <property name="PATH" value="/Users/naveenkhunteta/.jenkins/tools/hudson.model.JDK/JDK_1.8/bin:/Users/naveenkhunteta/Documents/apache-maven-3.5.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin"/>
+    <property name="HUDSON_SERVER_COOKIE" value="28eb4dd7d5919261"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="TERM_PROGRAM" value="Apple_Terminal"/>
+    <property name="sun.boot.class.path" value="/Users/naveenkhunteta/.jenkins/tools/hudson.model.JDK/JDK_1.8/jre/lib/resources.jar:/Users/naveenkhunteta/.jenkins/tools/hudson.model.JDK/JDK_1.8/jre/lib/rt.jar:/Users/naveenkhunteta/.jenkins/tools/hudson.model.JDK/JDK_1.8/jre/lib/sunrsasign.jar:/Users/naveenkhunteta/.jenkins/tools/hudson.model.JDK/JDK_1.8/jre/lib/jsse.jar:/Users/naveenkhunteta/.jenkins/tools/hudson.model.JDK/JDK_1.8/jre/lib/jce.jar:/Users/naveenkhunteta/.jenkins/tools/hudson.model.JDK/JDK_1.8/jre/lib/charsets.jar:/Users/naveenkhunteta/.jenkins/tools/hudson.model.JDK/JDK_1.8/jre/lib/jfr.jar:/Users/naveenkhunteta/.jenkins/tools/hudson.model.JDK/JDK_1.8/jre/classes"/>
+    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="TERM_SESSION_ID" value="B7C225BD-C5BD-4C4E-A4EE-568B5EC99195"/>
+    <property name="user.country.format" value="IN"/>
+    <property name="mysql" value="/usr/local/mysql/bin/mysql"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="NODE_LABELS" value="master"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="user.name" value="naveenkhunteta"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="user.language" value="en"/>
+    <property name="JOB_BASE_NAME" value="TestMavenTrial"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:9090/job/TestMavenTrial/1/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#1"/>
+    <property name="TMPDIR" value="/var/folders/0w/z084sy393n7798ssctmpjhq00000gn/T/"/>
+    <property name="sun.boot.library.path" value="/Users/naveenkhunteta/.jenkins/tools/hudson.model.JDK/JDK_1.8/jre/lib"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="XPC_FLAGS" value="0x0"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="NODE_NAME" value="master"/>
+    <property name="TERM" value="xterm-256color"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.endorsed.dirs" value="/Users/naveenkhunteta/.jenkins/tools/hudson.model.JDK/JDK_1.8/jre/lib/endorsed"/>
+    <property name="BUILD_ID" value="1"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="SHELL" value="/bin/bash"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="maven.conf" value="/Users/naveenkhunteta/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven/conf"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="user.country" value="US"/>
+    <property name="java.home" value="/Users/naveenkhunteta/.jenkins/tools/hudson.model.JDK/JDK_1.8/jre"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="os.version" value="10.12.6"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:9090/job/TestMavenTrial/1/display/redirect"/>
+    <property name="sun.font.fontmanager" value="sun.font.CFontManager"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="JOB_DISPLAY_URL" value="http://localhost:9090/job/TestMavenTrial/display/redirect"/>
+    <property name="SHLVL" value="1"/>
+    <property name="_" value="/usr/bin/java"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="JAVA_HOME" value="/Users/naveenkhunteta/.jenkins/tools/hudson.model.JDK/JDK_1.8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="LOGNAME" value="naveenkhunteta"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="HOME" value="/Users/naveenkhunteta"/>
+    <property name="JAVA_MAIN_CLASS_27141" value="Main"/>
+    <property name="user.home" value="/Users/naveenkhunteta"/>
+    <property name="BUILD_TAG" value="jenkins-TestMavenTrial-1"/>
+    <property name="JENKINS_SERVER_COOKIE" value="28eb4dd7d5919261"/>
+    <property name="HUDSON_URL" value="http://localhost:9090/"/>
+    <property name="XPC_SERVICE_NAME" value="0"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.library.path" value="/Users/naveenkhunteta/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="Apple_PubSub_Socket_Render" value="/private/tmp/com.apple.launchd.JxjEZZ8t31/Render"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="maven.home" value="/Users/naveenkhunteta/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven"/>
+    <property name="java.class.path" value="/Users/naveenkhunteta/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-agent-1.11.jar:/Users/naveenkhunteta/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven/boot/plexus-classworlds-2.5.2.jar:/Users/naveenkhunteta/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven/conf/logging"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main /Users/naveenkhunteta/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven /Users/naveenkhunteta/.jenkins/war/WEB-INF/lib/remoting-3.12.jar /Users/naveenkhunteta/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.11.jar /Users/naveenkhunteta/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.11.jar 50859"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PATH+JDK" value="/Users/naveenkhunteta/.jenkins/tools/hudson.model.JDK/JDK_1.8/bin"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="M2_HOME" value="/Users/naveenkhunteta/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven"/>
+    <property name="java.io.tmpdir" value="/var/folders/0w/z084sy393n7798ssctmpjhq00000gn/T/"/>
+    <property name="HUDSON_HOME" value="/Users/naveenkhunteta/.jenkins"/>
+    <property name="PATH+MAVEN" value="/Users/naveenkhunteta/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven/bin"/>
+    <property name="BUILD_URL" value="http://localhost:9090/job/TestMavenTrial/1/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="OLDPWD" value="/Users/naveenkhunteta/Documents"/>
+    <property name="SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.oCgy2mymKx/Listeners"/>
+    <property name="LC_CTYPE" value="UTF-8"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="com.apple.java.jvmTask" value="CommandLine"/>
+    <property name="java.ext.dirs" value="/Users/naveenkhunteta/Library/Java/Extensions:/Users/naveenkhunteta/.jenkins/tools/hudson.model.JDK/JDK_1.8/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="__CF_USER_TEXT_ENCODING" value="0x1F5:0x0:0x0"/>
+    <property name="user.dir" value="/Users/naveenkhunteta/Documents/workspace/FreeCRMTest"/>
+    <property name="JOB_URL" value="http://localhost:9090/job/TestMavenTrial/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="JAVA_ARCH" value="x86_64"/>
+    <property name="MAVEN_HOME" value="/Users/naveenkhunteta/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="BUILD_NUMBER" value="1"/>
+    <property name="JENKINS_URL" value="http://localhost:9090/"/>
+    <property name="TERM_PROGRAM_VERSION" value="388.1.1"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="maven3.interceptor" value="/Users/naveenkhunteta/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.11.jar"/>
+    <property name="WORKSPACE" value="/Users/naveenkhunteta/.jenkins/workspace/TestMavenTrial"/>
+    <property name="maven3.interceptor.common" value="/Users/naveenkhunteta/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.11.jar"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="USER" value="naveenkhunteta"/>
+  </properties>
+  <testcase classname="com.crm.qa.testcases.ContactsPageTest" name="verifyContactsPageLabel" time="0.098"/>
+  <testcase classname="com.crm.qa.testcases.HomePageTest" name="verifyHomePageTitleTest" time="0.011"/>
+  <testcase classname="com.crm.qa.testcases.LoginPageTest" name="loginPageTitleTest" time="0.017"/>
+  <testcase classname="com.crm.qa.testcases.ContactsPageTest" name="selectSingleContactsTest" time="20.556">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;test2 test2&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]&quot;}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;Naveens-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:828:e267:315b:c8a4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b), userDataDir=/var/folders/0w/z084sy393n7798ssctmpjhq00000gn/T/.org.chromium.Chromium.7VWnpP}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3bd8bb306889043598d8fa8c714d4281
+*** Element info: {Using=xpath, value=//a[text()=&apos;test2 test2&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;test2 test2&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]&quot;}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;Naveens-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:828:e267:315b:c8a4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b), userDataDir=/var/folders/0w/z084sy393n7798ssctmpjhq00000gn/T/.org.chromium.Chromium.7VWnpP}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3bd8bb306889043598d8fa8c714d4281
+*** Element info: {Using=xpath, value=//a[text()=&apos;test2 test2&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy6.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at com.crm.qa.pages.ContactsPage.selectContactsByName(ContactsPage.java:42)
+	at com.crm.qa.testcases.ContactsPageTest.selectSingleContactsTest(ContactsPageTest.java:58)
+</failure>
+    <system-out>Before navigating to: &apos;https://www.freecrm.com&apos;
+Navigated to:&apos;https://www.freecrm.com&apos;
+Trying to find Element By : By.name: username
+Found Element By : By.name: username
+Trying to find Element By : By.name: password
+Found Element By : By.name: password
+Trying to find Element By : By.xpath: //input[@type=&apos;submit&apos;]
+Found Element By : By.xpath: //input[@type=&apos;submit&apos;]
+Trying to find Element By : By.xpath: //a[contains(text(),&apos;Contacts&apos;)]
+Found Element By : By.xpath: //a[contains(text(),&apos;Contacts&apos;)]
+Trying to click on: [[ChromeDriver: chrome on MAC (3bd8bb306889043598d8fa8c714d4281)] -&gt; xpath: //a[contains(text(),&apos;Contacts&apos;)]]
+Clicked on: [[ChromeDriver: chrome on MAC (3bd8bb306889043598d8fa8c714d4281)] -&gt; xpath: //a[contains(text(),&apos;Contacts&apos;)]]
+Trying to find Element By : By.xpath: //a[text()=&apos;test2 test2&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]
+Exception occured: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;test2 test2&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]&quot;}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;Naveens-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:828:e267:315b:c8a4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b), userDataDir=/var/folders/0w/z084sy393n7798ssctmpjhq00000gn/T/.org.chromium.Chromium.7VWnpP}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3bd8bb306889043598d8fa8c714d4281
+*** Element info: {Using=xpath, value=//a[text()=&apos;test2 test2&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]}
+</system-out>
+    <system-err>Starting ChromeDriver 2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b) on port 32767
+Only local connections are allowed.
+Oct 13, 2017 3:03:06 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="com.crm.qa.testcases.HomePageTest" name="verifyUserNameTest" time="0.792"/>
+  <testcase classname="com.crm.qa.testcases.LoginPageTest" name="crmLogoImageTest" time="0.062"/>
+  <testcase classname="com.crm.qa.testcases.ContactsPageTest" name="selectMultipleContactsTest" time="20.654">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;test2 test2&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]&quot;}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;Naveens-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:828:e267:315b:c8a4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b), userDataDir=/var/folders/0w/z084sy393n7798ssctmpjhq00000gn/T/.org.chromium.Chromium.vlJkhE}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 527437a80343ccdf9d348104cfbd6ca2
+*** Element info: {Using=xpath, value=//a[text()=&apos;test2 test2&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;test2 test2&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]&quot;}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;Naveens-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:828:e267:315b:c8a4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b), userDataDir=/var/folders/0w/z084sy393n7798ssctmpjhq00000gn/T/.org.chromium.Chromium.vlJkhE}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 527437a80343ccdf9d348104cfbd6ca2
+*** Element info: {Using=xpath, value=//a[text()=&apos;test2 test2&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy6.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at com.crm.qa.pages.ContactsPage.selectContactsByName(ContactsPage.java:42)
+	at com.crm.qa.testcases.ContactsPageTest.selectMultipleContactsTest(ContactsPageTest.java:63)
+</failure>
+    <system-out>Before navigating to: &apos;https://www.freecrm.com&apos;
+Navigated to:&apos;https://www.freecrm.com&apos;
+Trying to find Element By : By.name: username
+Found Element By : By.name: username
+Trying to find Element By : By.name: password
+Found Element By : By.name: password
+Trying to find Element By : By.xpath: //input[@type=&apos;submit&apos;]
+Found Element By : By.xpath: //input[@type=&apos;submit&apos;]
+Trying to find Element By : By.xpath: //a[contains(text(),&apos;Contacts&apos;)]
+Found Element By : By.xpath: //a[contains(text(),&apos;Contacts&apos;)]
+Trying to click on: [[ChromeDriver: chrome on MAC (527437a80343ccdf9d348104cfbd6ca2)] -&gt; xpath: //a[contains(text(),&apos;Contacts&apos;)]]
+Clicked on: [[ChromeDriver: chrome on MAC (527437a80343ccdf9d348104cfbd6ca2)] -&gt; xpath: //a[contains(text(),&apos;Contacts&apos;)]]
+Trying to find Element By : By.xpath: //a[text()=&apos;test2 test2&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]
+Exception occured: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;test2 test2&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]&quot;}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;Naveens-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:828:e267:315b:c8a4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b), userDataDir=/var/folders/0w/z084sy393n7798ssctmpjhq00000gn/T/.org.chromium.Chromium.vlJkhE}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 527437a80343ccdf9d348104cfbd6ca2
+*** Element info: {Using=xpath, value=//a[text()=&apos;test2 test2&apos;]//parent::td[@class=&apos;datalistrow&apos;]//preceding-sibling::td[@class=&apos;datalistrow&apos;]//input[@name=&apos;contact_id&apos;]}
+</system-out>
+    <system-err>Starting ChromeDriver 2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b) on port 18206
+Only local connections are allowed.
+Oct 13, 2017 3:03:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="com.crm.qa.testcases.HomePageTest" name="verifyContactsLinkTest" time="1.956"/>
+  <testcase classname="com.crm.qa.testcases.LoginPageTest" name="loginTest" time="5.91"/>
+  <testcase classname="com.crm.qa.testcases.ContactsPageTest" name="validateCreateNewContact" time="3.977"/>
+  <testcase classname="com.crm.qa.testcases.ContactsPageTest" name="validateCreateNewContact" time="4.365"/>
+  <testcase classname="com.crm.qa.testcases.ContactsPageTest" name="validateCreateNewContact" time="3.941"/>
+</testsuite>

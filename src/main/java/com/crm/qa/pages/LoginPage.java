@@ -1,6 +1,7 @@
 package com.crm.qa.pages;
 
 import org.eclipse.jetty.util.annotation.Name;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -47,6 +48,8 @@ public class LoginPage extends TestBase{
 		//loginBtn.click();
 		    	JavascriptExecutor js = (JavascriptExecutor)driver;
 		    	js.executeScript("arguments[0].click();", loginBtn);
+		    	
+		    	
 		    
 		
 		return new HomePage();
