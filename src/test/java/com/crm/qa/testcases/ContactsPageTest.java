@@ -42,13 +42,14 @@ public class ContactsPageTest extends TestBase{
 	
 	
 	@BeforeMethod
-	public void setUp() {
+	public void setUp() throws InterruptedException {
 		
 		initialization();
 		testUtil = new TestUtil();
 		contactsPage = new ContactsPage();
 		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		TestUtil.runTimeInfo("error", "login successful");
 		testUtil.switchToFrame();
 		contactsPage = homePage.clickOnContactsLink();
 	}
