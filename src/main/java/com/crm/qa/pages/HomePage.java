@@ -29,7 +29,7 @@ public class HomePage extends TestBase {
 
 	// Initializing the Page Objects:
 	public HomePage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(new AjaxElementLocatorFactory(driver,5), this);
 	}
 	
 	public String verifyHomePageTitle(){
