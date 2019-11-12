@@ -47,7 +47,11 @@ public class LoginPageTest extends TestBase{
 		driver.quit();
 	}
 	
-	
+	@Test
+	public void gitbash() {
+		System.out.println("this is my second gitbash verify");
+
+	}
 	
 	
 

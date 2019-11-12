@@ -38,6 +38,8 @@ public class ContactsPageTest extends TestBase{
 	public ContactsPageTest(){
 			super();
 			
+			System.out.println("Why...............");
+			
 	}
 	
 	
