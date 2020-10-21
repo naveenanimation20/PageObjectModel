@@ -5,8 +5,6 @@
 
 package com.crm.qa.testcases;
 
-import java.io.IOException;
-
 import org.apache.log4j.PropertyConfigurator;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.By;
@@ -17,7 +15,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.testng.log4testng.Logger;
 
 import com.crm.qa.base.TestBase;
 import com.crm.qa.pages.ContactsPage;
