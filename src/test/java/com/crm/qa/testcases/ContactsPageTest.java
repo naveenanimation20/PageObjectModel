@@ -80,6 +80,7 @@ public class ContactsPageTest extends TestBase{
 	
 	@Test(priority=4, dataProvider="getCRMTestData")
 	public void validateCreateNewContact(String title, String firstName, String lastName, String company){
+		driver.findElement(By.xpath("//a[contains(text(),'Home')]")).click();//it will click on home tab
 		homePage.clickOnNewContactLink();
 		//contactsPage.createNewContact("Mr.", "Tom", "Peter", "Google");
 		contactsPage.createNewContact(title, firstName, lastName, company);
