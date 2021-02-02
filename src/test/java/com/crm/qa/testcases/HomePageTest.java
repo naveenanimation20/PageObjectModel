@@ -42,8 +42,9 @@ public class HomePageTest extends TestBase {
 		Assert.assertEquals(homePageTitle, "CRMPRO","Home page title not matched");
 	}
 	
-	@Test(priority=2)
-	public void verifyUserNameTest(){
+	//changes by sangame_singh
+	@Test(priority=8)
+	public void verifyUserNamesasasasasasTest(){
 		testUtil.switchToFrame();
 		Assert.assertTrue(homePage.verifyCorrectUserName());
 	}

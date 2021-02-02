@@ -49,7 +49,8 @@ public class FreeCrmTest {
 				+ "var jquery = document.createElement('script'); jquery.type = 'text/javascript';"
 				+ "jquery.src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js';"
 				+ "document.getElementsByTagName('head')[0].appendChild(jquery);" + "}");
-		Thread.sleep(5000);
+		//increase the time thread by sangam
+		Thread.sleep(40005454);
 
 		// Use jQuery to add jquery-growl to the page
 		js.executeScript("$.getScript('https://the-internet.herokuapp.com/js/vendor/jquery.growl.js')");
