@@ -26,9 +26,11 @@ public class HomePageTest extends TestBase {
 	//@test -- execute test case
 	//after each test case -- close the browser
 	
+	//adding comments before merhod
 	@BeforeMethod
 	public void setUp() {
-		initialization();
+
+		initialization(); 
 		testUtil = new TestUtil();
 		contactsPage = new ContactsPage();
 		loginPage = new LoginPage();
@@ -56,7 +58,7 @@ public class HomePageTest extends TestBase {
 	}
 	
 	
-	
+	//Added a comment for the teardown method
 	@AfterMethod
 	public void tearDown(){
 		driver.quit();
