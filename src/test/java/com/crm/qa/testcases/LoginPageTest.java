@@ -29,8 +29,8 @@ public class LoginPageTest extends TestBase{
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "#1 Free CRM for Any Business: Online Customer Relationship Software");
 	}
-	
-	@Test(priority=2)
+	//testing branching
+	@Test(priority=24)
 	public void crmLogoImageTest(){
 		boolean flag = loginPage.validateCRMImage();
 		Assert.assertTrue(flag);
