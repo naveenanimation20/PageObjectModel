@@ -13,17 +13,20 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class FreeCrmTest {
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class FreeCrmTest{
 
 	static WebDriver driver;
 	static JavascriptExecutor js;
 
 	@BeforeMethod
 	public void setUp() throws Exception {
-		System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/chromedriver");
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		js = (JavascriptExecutor) driver;
 		driver.get("https://www.freecrm.com/index.html");
+		driver.manage().window().maximize();
 	}
 
 	@Test
@@ -83,7 +86,7 @@ public class FreeCrmTest {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// now copy the screenshot to desired location using copyFile //method
 		FileUtils.copyFile(src, 
-				new File("/Users/NaveenKhunteta/Documents/MyPOMFramework/PageObjectModel/screenshots/" + fileName +".png"));
+				new File("C:\\Users\\AMBA BISHT\\git\\PageObjectModel\\screenshots" + fileName +".png"));
 
 	}
 
