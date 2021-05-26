@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.poi:openxml4j:1.0-beta">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/openxml4j/1.0-beta/openxml4j-1.0-beta.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/openxml4j/1.0-beta/openxml4j-1.0-beta-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/openxml4j/1.0-beta/openxml4j-1.0-beta-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
