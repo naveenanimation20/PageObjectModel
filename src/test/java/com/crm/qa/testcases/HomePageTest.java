@@ -61,6 +61,10 @@ public class HomePageTest extends TestBase {
 		driver.quit();
 	}
 	
+	@Test
+	public void myHomepage() {
+		System.out.println("this is my method...");
+	}
 	
 
 }
