@@ -2,6 +2,7 @@ package com.crm.qa.testcases;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
@@ -13,6 +14,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.crm.qa.util.TestUtil;
+
 public class FreeCrmTest {
 
 	static WebDriver driver;
@@ -20,10 +23,15 @@ public class FreeCrmTest {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
-		System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		js = (JavascriptExecutor) driver;
-		driver.get("https://www.freecrm.com/index.html");
+//		driver.get("https://www.freecrm.com/index.html");
+		driver.get("https://classic.freecrm.com/login.cfm");
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 	}
 
 	@Test
@@ -32,8 +40,10 @@ public class FreeCrmTest {
 		System.out.println("title is: " + title);
 		getRunTimeInfoMessage("info", title);
 
-		if (title.equals("Free CRM software in the cloud powers sales and customer serviceQQQQ")) {
+//		if (title.equals("Free CRM software in the cloud powers sales and customer serviceQQQQ")) {
+			if (title.equals("#1 Free CRM customer relationship management software cloud")) {
 			getRunTimeInfoMessage("info", "title is correct!! YAY!!!");
+			takeScreenshot("freecrmloginpage");
 			Assert.assertTrue(true);
 		} else {
 			getRunTimeInfoMessage("error", "title is not correct!! BUG BUG BUG!!!");
@@ -82,8 +92,8 @@ public class FreeCrmTest {
 		// Take screenshot and store as a file format
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// now copy the screenshot to desired location using copyFile //method
-		FileUtils.copyFile(src, 
-				new File("/Users/NaveenKhunteta/Documents/MyPOMFramework/PageObjectModel/screenshots/" + fileName +".png"));
+//		FileUtils.copyFile(src, new File("/Users/NaveenKhunteta/Documents/MyPOMFramework/PageObjectModel/screenshots/" + fileName +".png"));
+		FileUtils.copyFile(src, new File("screenshots" + fileName +".png"));
 
 	}
 

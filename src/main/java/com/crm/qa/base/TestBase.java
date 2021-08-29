@@ -15,6 +15,9 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.crm.qa.util.TestUtil;
 import com.crm.qa.util.WebEventListener;
+import com.qa.ExtentReportListener.ExtentReporterNG;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 
 public class TestBase {
 	
@@ -36,19 +39,20 @@ public class TestBase {
 		}
 	}
 	
-	
 	public static void initialization(){
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/chromedriver");	
+			
+			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");	
 			driver = new ChromeDriver(); 
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		}
 		else if(browserName.equals("FF")){
-			System.setProperty("webdriver.gecko.driver", "/Users/naveenkhunteta/Documents/SeleniumServer/geckodriver");	
+			System.setProperty("webdriver.gecko.driver", "drivers/geckodriver.exe");	
 			driver = new FirefoxDriver(); 
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		}
-		
 		
 		e_driver = new EventFiringWebDriver(driver);
 		// Now create object of EventListerHandler to register it with EventFiringWebDriver
@@ -64,13 +68,5 @@ public class TestBase {
 		driver.get(prop.getProperty("url"));
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 
 }
