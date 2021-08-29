@@ -67,7 +67,7 @@ public class ContactsPageTest extends TestBase{
 	@Test(priority=3)
 	public void selectMultipleContactsTest(){
 		contactsPage.selectContactsByName("test2 test2");
-		contactsPage.selectContactsByName("ui uiii");
+		contactsPage.selectContactsByName("Tom Peter");
 
 	}
 	
@@ -85,15 +85,11 @@ public class ContactsPageTest extends TestBase{
 		contactsPage.createNewContact(title, firstName, lastName, company);
 		
 	}
-	
-	
 
+	
 	@AfterMethod
 	public void tearDown(){
 		driver.quit();
 	}
-	
-	
-	
 	
 }
