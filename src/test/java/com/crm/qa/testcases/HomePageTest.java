@@ -30,7 +30,6 @@ public class HomePageTest extends TestBase {
 	public void setUp() {
 		initialization();
 		testUtil = new TestUtil();
-		contactsPage = new ContactsPage();
 		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
