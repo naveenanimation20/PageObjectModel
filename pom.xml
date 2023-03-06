@@ -13,7 +13,10 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		 <maven.compiler.source>1.6</maven.compiler.source>
-                  <maven.compiler.target>1.6</maven.compiler.target>
+                  <maven.compiler.target>1.6</maven.compiler.target>	
+   		 <java.version>17</java.version>
+   		 <JAVA_HOME>/home/jdk-17</JAVA_HOME>
+
 	</properties>
 
 	<dependencies>
@@ -88,4 +91,25 @@
 
 
 	</dependencies>
+	
+
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>17</source>
+                <target>17</target>
+                <verbose>true</verbose>
+                <fork>true</fork>
+                <executable>${JAVA_HOME}/bin/javac</executable>
+            </configuration>
+
+        </plugin>
+
+
+    </plugins>
+
+</build>
 </project>
