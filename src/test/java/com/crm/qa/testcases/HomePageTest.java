@@ -54,6 +54,7 @@ public class HomePageTest extends TestBase {
 		contactsPage = homePage.clickOnContactsLink();
 	}
 	
+
 	
 	
 	@AfterMethod
