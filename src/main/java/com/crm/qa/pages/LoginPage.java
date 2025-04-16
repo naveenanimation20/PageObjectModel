@@ -22,7 +22,7 @@ public class LoginPage extends TestBase{
 	@FindBy(xpath="//button[contains(text(),'Sign Up')]")
 	WebElement signUpBtn;
 	
-	@FindBy(xpath="//img[contains(@class,'img-responsive')]")
+	@FindBy(xpath="//img[@alt='Appstore']")
 	WebElement crmLogo;
 	
 	//Initializing the Page Objects:
