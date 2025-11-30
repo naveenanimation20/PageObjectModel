@@ -1,0 +1,13 @@
+{
+    "name": "githubcopilot-migration-agent",
+    "version": "0.1.0",
+    "private": true,
+    "bin": {
+        "gc-migrate": "index.js"
+    },
+    "scripts": {
+        "convert": "node index.js convert",
+        "list": "node index.js list",
+        "run-tests": "node index.js run-tests"
+    }
+}

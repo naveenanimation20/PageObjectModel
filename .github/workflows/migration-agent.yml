@@ -1,0 +1,50 @@
+name: Migration Agent
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - migration
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies (if present)
+        run: |
+          if [ -f playwrite/package.json ]; then
+            cd playwrite
+            npm ci
+            npx playwright install --with-deps
+          else
+            echo "No package.json in playwrite/, skipping npm install"
+          fi
+
+      - name: Run migration agent (convert)
+        run: |
+          cd playwrite
+          node githubcopilot-agent/index.js convert
+
+      - name: Run converted tests (if present)
+        if: ${{ always() }}
+        run: |
+          if [ -f playwrite/package.json ]; then
+            cd playwrite
+            npm run test:all || true
+          else
+            echo "No package.json in playwrite/, skipping tests"
+          fi
+
+      - name: Upload converted artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: converted-files
+          path: playwrite/converted/**
