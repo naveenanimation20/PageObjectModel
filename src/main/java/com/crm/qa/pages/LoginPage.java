@@ -10,13 +10,13 @@ import com.crm.qa.base.TestBase;
 public class LoginPage extends TestBase{
 	
 	//Page Factory - OR:
-	@FindBy(name="username")
-	WebElement username;
+	@FindBy(id="email")
+	WebElement email;
 	
-	@FindBy(name="password")
+	@FindBy(id="password")
 	WebElement password;
 	
-	@FindBy(xpath="//input[@type='submit']")
+	@FindBy(xpath="//button[@type='submit']")
 	WebElement loginBtn;
 	
 	@FindBy(xpath="//button[contains(text(),'Sign Up')]")
@@ -39,8 +39,8 @@ public class LoginPage extends TestBase{
 		return crmLogo.isDisplayed();
 	}
 	
-	public HomePage login(String un, String pwd){
-		username.sendKeys(un);
+	public HomePage login(String emailId, String pwd){
+		email.sendKeys(emailId);
 		password.sendKeys(pwd);
 		//loginBtn.click();
 		    	JavascriptExecutor js = (JavascriptExecutor)driver;
